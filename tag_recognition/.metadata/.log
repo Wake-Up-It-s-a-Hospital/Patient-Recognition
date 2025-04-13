@@ -1,0 +1,96 @@
+
+!ENTRY com.st.stm32cube.common.projectcreation 4 0 2025-04-13 11:50:45.091
+!MESSAGE Project is null
+
+!ENTRY org.eclipse.core.resources 4 2 2025-04-13 11:51:05.807
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Internal error saving launch history
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.saving(LaunchConfigurationManager.java:1182)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1DebugUIPluginSaveParticipant.saving(DebugUIPlugin.java:531)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:453)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:269)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:272)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1226)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2494)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.io.IOException: 지정된 경로를 찾을 수 없습니다
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.base/java.io.File.createNewFile(File.java:1043)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.persistLaunchHistory(LaunchConfigurationManager.java:467)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.saving(LaunchConfigurationManager.java:1180)
+	... 9 more
+!SUBENTRY 1 org.eclipse.debug.ui 4 0 2025-04-13 11:51:05.810
+!MESSAGE Internal error saving launch history
+!STACK 0
+java.io.IOException: 지정된 경로를 찾을 수 없습니다
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.base/java.io.File.createNewFile(File.java:1043)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.persistLaunchHistory(LaunchConfigurationManager.java:467)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.saving(LaunchConfigurationManager.java:1180)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1DebugUIPluginSaveParticipant.saving(DebugUIPlugin.java:531)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:453)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:269)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:272)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1226)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2494)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+!SUBENTRY 1 org.eclipse.debug.ui 4 0 2025-04-13 11:51:05.811
+!MESSAGE Internal error saving launch history
+!STACK 0
+java.io.IOException: 지정된 경로를 찾을 수 없습니다
+	at java.base/java.io.WinNTFileSystem.createFileExclusively(Native Method)
+	at java.base/java.io.File.createNewFile(File.java:1043)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.persistLaunchHistory(LaunchConfigurationManager.java:467)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationManager.saving(LaunchConfigurationManager.java:1180)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1DebugUIPluginSaveParticipant.saving(DebugUIPlugin.java:531)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:453)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:269)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:272)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1226)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2494)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-04-13 11:51:08.395
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 4 1 2025-04-13 11:51:08.401
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 4 568 2025-04-13 11:51:08.401
+!MESSAGE Could not write workspace metadata 'D:/Project/SmartPole/Patient-Recognition/tag_recognition/.metadata/.plugins/org.eclipse.core.resources/.root/3.tree'.
+!STACK 0
+java.io.FileNotFoundException: D:\Project\SmartPole\Patient-Recognition\tag_recognition\.metadata\.plugins\org.eclipse.core.resources\.root\3.tree (지정된 경로를 찾을 수 없습니다)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.core.internal.localstore.SafeFileOutputStream.<init>(SafeFileOutputStream.java:55)
+	at org.eclipse.core.internal.resources.SaveManager.saveTree(SaveManager.java:1424)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1230)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2494)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 2 10035 2025-04-13 11:51:08.811
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2025-04-13 11:52:29.263 -----------------------------------------------
+eclipse.buildId=Version 1.15.1
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-04-13 11:53:22.120
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-04-13 11:53:22.144
+!MESSAGE Log4j2 initialized with config file D:\Project\SmartPole\Patient-Recognition\tag_recognition\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-04-13 11:53:30.415
+!MESSAGE Started RMI Server, listening on port 41337
