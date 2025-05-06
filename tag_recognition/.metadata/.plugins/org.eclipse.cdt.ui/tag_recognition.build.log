@@ -1,17 +1,10 @@
-22:18:45 **** Incremental Build of configuration Debug for project tag_recognition ****
+16:32:54 **** Incremental Build of configuration Debug for project tag_recognition ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I"D:/Project/SmartPole/Patient-Recognition/tag_recognition/tag_recognition/HuskyLens/Inc" -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "tag_recognition.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Project\SmartPole\Patient-Recognition\tag_recognition\tag_recognition\STM32F103RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="tag_recognition.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: tag_recognition.elf
- 
 arm-none-eabi-size  tag_recognition.elf 
-arm-none-eabi-objdump -h -S tag_recognition.elf  > "tag_recognition.list"
    text	   data	    bss	    dec	    hex	filename
-  21856	    112	   2096	  24064	   5e00	tag_recognition.elf
+  15512	    112	   2096	  17720	   4538	tag_recognition.elf
 Finished building: default.size.stdout
  
-Finished building: tag_recognition.list
- 
 
-22:18:47 Build Finished. 0 errors, 0 warnings. (took 2s.490ms)
+16:32:56 Build Finished. 0 errors, 0 warnings. (took 1s.273ms)
 

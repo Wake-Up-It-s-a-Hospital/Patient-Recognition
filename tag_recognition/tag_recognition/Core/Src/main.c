@@ -110,10 +110,11 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {
-	  if (HAL_I2C_Master_Transmit(&hi2c2, 0x32 << 1, husky_tx, sizeof(husky_tx), 100) == HAL_OK)
+  {	  t_ok = HAL_I2C_Master_Transmit(&hi2c2, 0x32 << 1, husky_tx, sizeof(husky_tx), HAL_MAX_DELAY);
+  	  r_ok = HAL_I2C_Master_Receive(&hi2c2, 0x32 << 1, husky_rx, sizeof(husky_rx), HAL_MAX_DELAY);
+	  if (t_ok == HAL_OK)
 	  {
-	      if (HAL_I2C_Master_Receive(&hi2c2, 0x32 << 1, husky_rx, sizeof(husky_rx), 100) == HAL_OK)
+	      if (r_ok == HAL_OK)
 	      {
 	    	  printf("RAW: ");
 	    	  for (int i = 0; i < 30; i++) {
