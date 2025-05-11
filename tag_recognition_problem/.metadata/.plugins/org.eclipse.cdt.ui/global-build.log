@@ -90,3 +90,460 @@ arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g
 make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
 make: *** Waiting for unfinished jobs....
 "make -j8 all" terminated with exit code 2. Build might be incomplete.
+20:45:24 **** Build of configuration Debug for project UART_huskylens ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/usart.o"
+../Core/Src/main.c:60:8: error: unknown type name 'bool'
+   60 | static bool receive_fail = false;
+      |        ^~~~
+../Core/Src/main.c:60:28: error: 'false' undeclared here (not in a function)
+   60 | static bool receive_fail = false;
+      |                            ^~~~~
+../Core/Src/main.c:23:1: note: 'false' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+   22 | #include "gpio.h"
+  +++ |+#include <stdbool.h>
+   23 | 
+../Core/Src/main.c:61:8: error: unknown type name 'bool'
+   61 | static bool content_read_end = false;
+      |        ^~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:80:9: error: unknown type name 'bool'
+   80 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |         ^~~~
+../Core/Src/main.c:80:9: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:80:31: warning: implicit declaration of function 'husky_lens_protocol_receive' [-Wimplicit-function-declaration]
+   80 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:84:17: warning: implicit declaration of function 'husky_lens_protocol_read_begin' [-Wimplicit-function-declaration]
+   84 |             if (husky_lens_protocol_read_begin(0x36)) // ?˜ˆ: command ID 0x36 (Learned ID Result ?“±)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:86:29: warning: implicit declaration of function 'husky_lens_protocol_read_uint8' [-Wimplicit-function-declaration]
+   86 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:88:17: warning: implicit declaration of function 'husky_lens_protocol_read_end' [-Wimplicit-function-declaration]
+   88 |                 husky_lens_protocol_read_end();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   90 |                 printf("Received Tag: X = %d, Y = %d\r\n", x, y);
+      |                 ^~~~~~
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   23 | 
+../Core/Src/main.c:90:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   90 |                 printf("Received Tag: X = %d, Y = %d\r\n", x, y);
+      |                 ^~~~~~
+../Core/Src/main.c:90:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:106:1: error: unknown type name 'bool'
+  106 | bool validateCheckSum(){
+      | ^~~~
+../Core/Src/main.c:106:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:115:1: error: unknown type name 'bool'
+  115 | bool husky_lens_protocol_receive(uint8_t data){
+      | ^~~~
+../Core/Src/main.c:115:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:115:6: error: conflicting types for 'husky_lens_protocol_receive'; have 'int(uint8_t)' {aka 'int(unsigned char)'}
+  115 | bool husky_lens_protocol_receive(uint8_t data){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:115:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+  115 | bool husky_lens_protocol_receive(uint8_t data){
+      | ^~~~
+../Core/Src/main.c:80:31: note: previous implicit declaration of 'husky_lens_protocol_receive' with type 'int()'
+   80 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:146:1: error: unknown type name 'bool'
+  146 | bool husky_lens_protocol_read_begin(uint8_t command){
+      | ^~~~
+../Core/Src/main.c:146:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:146:6: error: conflicting types for 'husky_lens_protocol_read_begin'; have 'int(uint8_t)' {aka 'int(unsigned char)'}
+  146 | bool husky_lens_protocol_read_begin(uint8_t command){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:146:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+  146 | bool husky_lens_protocol_read_begin(uint8_t command){
+      | ^~~~
+../Core/Src/main.c:84:17: note: previous implicit declaration of 'husky_lens_protocol_read_begin' with type 'int()'
+   84 |             if (husky_lens_protocol_read_begin(0x36)) // ?˜ˆ: command ID 0x36 (Learned ID Result ?“±)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'husky_lens_protocol_read_begin':
+../Core/Src/main.c:152:16: error: 'true' undeclared (first use in this function)
+  152 |         return true;
+      |                ^~~~
+../Core/Src/main.c:152:16: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:152:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:157:9: error: conflicting types for 'husky_lens_protocol_read_uint8'; have 'uint8_t()' {aka 'unsigned char()'}
+  157 | uint8_t husky_lens_protocol_read_uint8(){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:86:29: note: previous implicit declaration of 'husky_lens_protocol_read_uint8' with type 'int()'
+   86 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'husky_lens_protocol_read_uint8':
+../Core/Src/main.c:158:76: error: 'true' undeclared (first use in this function)
+  158 |     if (content_current >= content_end || content_read_end){receive_fail = true; return 0;}
+      |                                                                            ^~~~
+../Core/Src/main.c:158:76: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:160:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  160 |     memcpy(&result, receive_buffer + content_current, sizeof(result));
+      |     ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   22 | #include "gpio.h"
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:160:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  160 |     memcpy(&result, receive_buffer + content_current, sizeof(result));
+      |     ^~~~~~
+../Core/Src/main.c:160:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:165:1: error: unknown type name 'bool'
+  165 | bool husky_lens_protocol_read_end(){
+      | ^~~~
+../Core/Src/main.c:165:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c: In function 'husky_lens_protocol_receive':
+../Core/Src/main.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+  144 | }
+      | ^
+../Core/Src/main.c: In function 'husky_lens_protocol_read_begin':
+../Core/Src/main.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+  155 | }
+      | ^
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:30:35 **** Incremental Build of configuration Debug for project UART_huskylens ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:60:8: error: unknown type name 'bool'
+   60 | static bool receive_fail = false;
+      |        ^~~~
+../Core/Src/main.c:60:28: error: 'false' undeclared here (not in a function)
+   60 | static bool receive_fail = false;
+      |                            ^~~~~
+../Core/Src/main.c:23:1: note: 'false' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+   22 | #include "gpio.h"
+  +++ |+#include <stdbool.h>
+   23 | 
+../Core/Src/main.c:61:8: error: unknown type name 'bool'
+   61 | static bool content_read_end = false;
+      |        ^~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:80:9: error: unknown type name 'bool'
+   80 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |         ^~~~
+../Core/Src/main.c:80:9: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:80:31: warning: implicit declaration of function 'husky_lens_protocol_receive' [-Wimplicit-function-declaration]
+   80 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:84:17: warning: implicit declaration of function 'husky_lens_protocol_read_begin' [-Wimplicit-function-declaration]
+   84 |             if (husky_lens_protocol_read_begin(0x36)) // ?˜ˆ: command ID 0x36 (Learned ID Result ?“±)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:86:29: warning: implicit declaration of function 'husky_lens_protocol_read_uint8' [-Wimplicit-function-declaration]
+   86 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:88:17: warning: implicit declaration of function 'husky_lens_protocol_read_end' [-Wimplicit-function-declaration]
+   88 |                 husky_lens_protocol_read_end();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:90:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   90 |                 printf("Received Tag: X = %d, Y = %d\r\n", x, y);
+      |                 ^~~~~~
+../Core/Src/main.c:23:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   22 | #include "gpio.h"
+  +++ |+#include <stdio.h>
+   23 | 
+../Core/Src/main.c:90:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   90 |                 printf("Received Tag: X = %d, Y = %d\r\n", x, y);
+      |                 ^~~~~~
+../Core/Src/main.c:90:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:106:1: error: unknown type name 'bool'
+  106 | bool validateCheckSum(){
+      | ^~~~
+../Core/Src/main.c:106:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:115:1: error: unknown type name 'bool'
+  115 | bool husky_lens_protocol_receive(uint8_t data){
+      | ^~~~
+../Core/Src/main.c:115:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:115:6: error: conflicting types for 'husky_lens_protocol_receive'; have 'int(uint8_t)' {aka 'int(unsigned char)'}
+  115 | bool husky_lens_protocol_receive(uint8_t data){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:115:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+  115 | bool husky_lens_protocol_receive(uint8_t data){
+      | ^~~~
+../Core/Src/main.c:80:31: note: previous implicit declaration of 'husky_lens_protocol_receive' with type 'int()'
+   80 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:146:1: error: unknown type name 'bool'
+  146 | bool husky_lens_protocol_read_begin(uint8_t command){
+      | ^~~~
+../Core/Src/main.c:146:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:146:6: error: conflicting types for 'husky_lens_protocol_read_begin'; have 'int(uint8_t)' {aka 'int(unsigned char)'}
+  146 | bool husky_lens_protocol_read_begin(uint8_t command){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:146:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+  146 | bool husky_lens_protocol_read_begin(uint8_t command){
+      | ^~~~
+../Core/Src/main.c:84:17: note: previous implicit declaration of 'husky_lens_protocol_read_begin' with type 'int()'
+   84 |             if (husky_lens_protocol_read_begin(0x36)) // ?˜ˆ: command ID 0x36 (Learned ID Result ?“±)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'husky_lens_protocol_read_begin':
+../Core/Src/main.c:152:16: error: 'true' undeclared (first use in this function)
+  152 |         return true;
+      |                ^~~~
+../Core/Src/main.c:152:16: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:152:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:157:9: error: conflicting types for 'husky_lens_protocol_read_uint8'; have 'uint8_t()' {aka 'unsigned char()'}
+  157 | uint8_t husky_lens_protocol_read_uint8(){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:86:29: note: previous implicit declaration of 'husky_lens_protocol_read_uint8' with type 'int()'
+   86 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'husky_lens_protocol_read_uint8':
+../Core/Src/main.c:158:76: error: 'true' undeclared (first use in this function)
+  158 |     if (content_current >= content_end || content_read_end){receive_fail = true; return 0;}
+      |                                                                            ^~~~
+../Core/Src/main.c:158:76: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:160:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  160 |     memcpy(&result, receive_buffer + content_current, sizeof(result));
+      |     ^~~~~~
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   22 | #include "gpio.h"
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:160:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  160 |     memcpy(&result, receive_buffer + content_current, sizeof(result));
+      |     ^~~~~~
+../Core/Src/main.c:160:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:165:1: error: unknown type name 'bool'
+  165 | bool husky_lens_protocol_read_end(){
+      | ^~~~
+../Core/Src/main.c:165:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c: In function 'husky_lens_protocol_receive':
+../Core/Src/main.c:144:1: warning: control reaches end of non-void function [-Wreturn-type]
+  144 | }
+      | ^
+../Core/Src/main.c: In function 'husky_lens_protocol_read_begin':
+../Core/Src/main.c:155:1: warning: control reaches end of non-void function [-Wreturn-type]
+  155 | }
+      | ^
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:31:39 **** Incremental Build of configuration Debug for project UART_huskylens ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:85:31: warning: implicit declaration of function 'husky_lens_protocol_receive' [-Wimplicit-function-declaration]
+   85 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:17: warning: implicit declaration of function 'husky_lens_protocol_read_begin' [-Wimplicit-function-declaration]
+   89 |             if (husky_lens_protocol_read_begin(0x36)) // ?ï¿½ï¿½: command ID 0x36 (Learned ID Result ?ï¿½ï¿½)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:91:29: warning: implicit declaration of function 'husky_lens_protocol_read_uint8' [-Wimplicit-function-declaration]
+   91 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:93:17: warning: implicit declaration of function 'husky_lens_protocol_read_end' [-Wimplicit-function-declaration]
+   93 |                 husky_lens_protocol_read_end();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:120:6: error: conflicting types for 'husky_lens_protocol_receive'; have '_Bool(uint8_t)' {aka '_Bool(unsigned char)'}
+  120 | bool husky_lens_protocol_receive(uint8_t data){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:85:31: note: previous implicit declaration of 'husky_lens_protocol_receive' with type 'int()'
+   85 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:151:6: error: conflicting types for 'husky_lens_protocol_read_begin'; have '_Bool(uint8_t)' {aka '_Bool(unsigned char)'}
+  151 | bool husky_lens_protocol_read_begin(uint8_t command){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:17: note: previous implicit declaration of 'husky_lens_protocol_read_begin' with type 'int()'
+   89 |             if (husky_lens_protocol_read_begin(0x36)) // ?ï¿½ï¿½: command ID 0x36 (Learned ID Result ?ï¿½ï¿½)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:162:9: error: conflicting types for 'husky_lens_protocol_read_uint8'; have 'uint8_t()' {aka 'unsigned char()'}
+  162 | uint8_t husky_lens_protocol_read_uint8(){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:91:29: note: previous implicit declaration of 'husky_lens_protocol_read_uint8' with type 'int()'
+   91 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:170:6: error: conflicting types for 'husky_lens_protocol_read_end'; have '_Bool()'
+  170 | bool husky_lens_protocol_read_end(){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:93:17: note: previous implicit declaration of 'husky_lens_protocol_read_end' with type 'int()'
+   93 |                 husky_lens_protocol_read_end();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:40: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:44:02 **** Incremental Build of configuration Debug for project UART_huskylens ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c:60:8: error: unknown type name 'bool'
+   60 | static bool receive_fail = false;
+      |        ^~~~
+../Core/Src/main.c:60:28: error: 'false' undeclared here (not in a function)
+   60 | static bool receive_fail = false;
+      |                            ^~~~~
+../Core/Src/main.c:21:1: note: 'false' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+   20 | #include "main.h"
+  +++ |+#include <stdbool.h>
+   21 | 
+../Core/Src/main.c:61:8: error: unknown type name 'bool'
+   61 | static bool content_read_end = false;
+      |        ^~~~
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:83:9: error: unknown type name 'bool'
+   83 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |         ^~~~
+../Core/Src/main.c:83:9: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:83:31: warning: implicit declaration of function 'husky_lens_protocol_receive' [-Wimplicit-function-declaration]
+   83 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:87:17: warning: implicit declaration of function 'husky_lens_protocol_read_begin' [-Wimplicit-function-declaration]
+   87 |             if (husky_lens_protocol_read_begin(0x36)) // ?ï¿½ï¿½: command ID 0x36 (Learned ID Result ?ï¿½ï¿½)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:29: warning: implicit declaration of function 'husky_lens_protocol_read_uint8' [-Wimplicit-function-declaration]
+   89 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:91:17: warning: implicit declaration of function 'husky_lens_protocol_read_end' [-Wimplicit-function-declaration]
+   91 |                 husky_lens_protocol_read_end();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:93:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   93 |                 printf("Received Tag: X = %d, Y = %d\r\n", x, y);
+      |                 ^~~~~~
+../Core/Src/main.c:21:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+   20 | #include "main.h"
+  +++ |+#include <stdio.h>
+   21 | 
+../Core/Src/main.c:93:17: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+   93 |                 printf("Received Tag: X = %d, Y = %d\r\n", x, y);
+      |                 ^~~~~~
+../Core/Src/main.c:93:17: note: include '<stdio.h>' or provide a declaration of 'printf'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:109:1: error: unknown type name 'bool'
+  109 | bool validateCheckSum(){
+      | ^~~~
+../Core/Src/main.c:109:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:118:1: error: unknown type name 'bool'
+  118 | bool husky_lens_protocol_receive(uint8_t data){
+      | ^~~~
+../Core/Src/main.c:118:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:118:6: error: conflicting types for 'husky_lens_protocol_receive'; have 'int(uint8_t)' {aka 'int(unsigned char)'}
+  118 | bool husky_lens_protocol_receive(uint8_t data){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:118:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+  118 | bool husky_lens_protocol_receive(uint8_t data){
+      | ^~~~
+../Core/Src/main.c:83:31: note: previous implicit declaration of 'husky_lens_protocol_receive' with type 'int()'
+   83 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:149:1: error: unknown type name 'bool'
+  149 | bool husky_lens_protocol_read_begin(uint8_t command){
+      | ^~~~
+../Core/Src/main.c:149:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:149:6: error: conflicting types for 'husky_lens_protocol_read_begin'; have 'int(uint8_t)' {aka 'int(unsigned char)'}
+  149 | bool husky_lens_protocol_read_begin(uint8_t command){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:149:1: note: an argument type that has a default promotion cannot match an empty parameter name list declaration
+  149 | bool husky_lens_protocol_read_begin(uint8_t command){
+      | ^~~~
+../Core/Src/main.c:87:17: note: previous implicit declaration of 'husky_lens_protocol_read_begin' with type 'int()'
+   87 |             if (husky_lens_protocol_read_begin(0x36)) // ?ï¿½ï¿½: command ID 0x36 (Learned ID Result ?ï¿½ï¿½)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'husky_lens_protocol_read_begin':
+../Core/Src/main.c:155:16: error: 'true' undeclared (first use in this function)
+  155 |         return true;
+      |                ^~~~
+../Core/Src/main.c:155:16: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:155:16: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:160:9: error: conflicting types for 'husky_lens_protocol_read_uint8'; have 'uint8_t()' {aka 'unsigned char()'}
+  160 | uint8_t husky_lens_protocol_read_uint8(){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:89:29: note: previous implicit declaration of 'husky_lens_protocol_read_uint8' with type 'int()'
+   89 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'husky_lens_protocol_read_uint8':
+../Core/Src/main.c:161:76: error: 'true' undeclared (first use in this function)
+  161 |     if (content_current >= content_end || content_read_end){receive_fail = true; return 0;}
+      |                                                                            ^~~~
+../Core/Src/main.c:161:76: note: 'true' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c:163:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+  163 |     memcpy(&result, receive_buffer + content_current, sizeof(result));
+      |     ^~~~~~
+../Core/Src/main.c:21:1: note: include '<string.h>' or provide a declaration of 'memcpy'
+   20 | #include "main.h"
+  +++ |+#include <string.h>
+   21 | 
+../Core/Src/main.c:163:5: warning: incompatible implicit declaration of built-in function 'memcpy' [-Wbuiltin-declaration-mismatch]
+  163 |     memcpy(&result, receive_buffer + content_current, sizeof(result));
+      |     ^~~~~~
+../Core/Src/main.c:163:5: note: include '<string.h>' or provide a declaration of 'memcpy'
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:168:1: error: unknown type name 'bool'
+  168 | bool husky_lens_protocol_read_end(){
+      | ^~~~
+../Core/Src/main.c:168:1: note: 'bool' is defined in header '<stdbool.h>'; did you forget to '#include <stdbool.h>'?
+../Core/Src/main.c: In function 'husky_lens_protocol_receive':
+../Core/Src/main.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+  147 | }
+      | ^
+../Core/Src/main.c: In function 'husky_lens_protocol_read_begin':
+../Core/Src/main.c:158:1: warning: control reaches end of non-void function [-Wreturn-type]
+  158 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+21:44:34 **** Incremental Build of configuration Debug for project UART_huskylens ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_UART_RxCpltCallback':
+../Core/Src/main.c:87:31: warning: implicit declaration of function 'husky_lens_protocol_receive' [-Wimplicit-function-declaration]
+   87 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:91:17: warning: implicit declaration of function 'husky_lens_protocol_read_begin' [-Wimplicit-function-declaration]
+   91 |             if (husky_lens_protocol_read_begin(0x36)) // ?ï¿½ï¿½: command ID 0x36 (Learned ID Result ?ï¿½ï¿½)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:93:29: warning: implicit declaration of function 'husky_lens_protocol_read_uint8' [-Wimplicit-function-declaration]
+   93 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:95:17: warning: implicit declaration of function 'husky_lens_protocol_read_end' [-Wimplicit-function-declaration]
+   95 |                 husky_lens_protocol_read_end();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:122:6: error: conflicting types for 'husky_lens_protocol_receive'; have '_Bool(uint8_t)' {aka '_Bool(unsigned char)'}
+  122 | bool husky_lens_protocol_receive(uint8_t data){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:87:31: note: previous implicit declaration of 'husky_lens_protocol_receive' with type 'int()'
+   87 |         bool frame_complete = husky_lens_protocol_receive(rx_byte);
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:153:6: error: conflicting types for 'husky_lens_protocol_read_begin'; have '_Bool(uint8_t)' {aka '_Bool(unsigned char)'}
+  153 | bool husky_lens_protocol_read_begin(uint8_t command){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:91:17: note: previous implicit declaration of 'husky_lens_protocol_read_begin' with type 'int()'
+   91 |             if (husky_lens_protocol_read_begin(0x36)) // ?ï¿½ï¿½: command ID 0x36 (Learned ID Result ?ï¿½ï¿½)
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:164:9: error: conflicting types for 'husky_lens_protocol_read_uint8'; have 'uint8_t()' {aka 'unsigned char()'}
+  164 | uint8_t husky_lens_protocol_read_uint8(){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:93:29: note: previous implicit declaration of 'husky_lens_protocol_read_uint8' with type 'int()'
+   93 |                 uint8_t x = husky_lens_protocol_read_uint8();
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:172:6: error: conflicting types for 'husky_lens_protocol_read_end'; have '_Bool()'
+  172 | bool husky_lens_protocol_read_end(){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:95:17: note: previous implicit declaration of 'husky_lens_protocol_read_end' with type 'int()'
+   95 |                 husky_lens_protocol_read_end();
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
