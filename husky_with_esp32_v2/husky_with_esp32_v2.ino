@@ -1,59 +1,82 @@
-#include <Arduino.h>
-#include <Wire.h>
+#include <HardwareSerial.h>
 #include "HUSKYLENS.h"
 #include <ESP32Servo.h>
 
 HUSKYLENS huskylens;
 Servo panServo;
 
-const int panPin = 14;
-const int screenCenterX = 160;  // HuskyLens의 중심 x 좌표
-int panAngle = 90;              // 서보 초기 각도
-bool huskyConnected = false; 
+HardwareSerial huskySerial(2);  // UART2: GPIO 16 (RX), 17 (TX)
+
+const int panPin = 15;           // MG90S 제어 핀
+const int centerX = 160;         // 화면 중심 x 좌표
+int panAngle = 90;               // 초기 서보 각도
+float Kp = 0.05;                // 비례 제어 상수 (proportional Gain)
+int angle_offset;               // 각도 변화량
 
 void setup() {
   Serial.begin(115200);
 
-  Wire.begin(21, 22);           // SDA = 21, SCL = 22 핀 설정
-  huskylens.begin(Wire);
+  // UART2 초기화
+  huskySerial.begin(9600, SERIAL_8N1, 16, 17);
+  huskylens.begin(huskySerial);
 
-  panServo.setPeriodHertz(50); // MG90S는 50Hz PWM 사용
-  panServo.attach(panPin, 500, 2500);  // PWM 범위: 0°=500us, 180°=2500us
-  panServo.write(panAngle);     // 초기 중간 위치
+  // 서보 설정
+  panServo.setPeriodHertz(50);
+  panServo.attach(panPin, 500, 2500);
+  panServo.write(panAngle);
 
+  // HuskyLens 연결 확인 (request만으로 간단히 확인)
+  bool connected = false;
   for (int i = 0; i < 5; i++) {
-  if (huskylens.request() && huskylens.available()) {
-    huskyConnected = true;
-    break;
+    if (huskylens.request()) {
+      connected = true;
+      break;
+    }
+    Serial.println("HuskyLens 연결 시도 중...");
+    delay(500);
   }
-  delay(500);
-}
 
-if (!huskyConnected) {
-  Serial.println("HuskyLens 연결 실패");
-  while (1);
-}
+  if (!connected) {
+    Serial.println("❌ HuskyLens 연결 실패");
+    while (1);
+  } else {
+    Serial.println("✅ HuskyLens 연결 성공");
+  }
 
-  huskylens.writeAlgorithm(ALGORITHM_TAG_RECOGNITION); // 태그 인식 모드 설정
+  huskylens.writeAlgorithm(ALGORITHM_TAG_RECOGNITION);  // 태그 인식 모드
 }
 
 void loop() {
-  if (huskylens.request()) {
-    if (huskylens.available()) {
+  if (huskylens.request()) 
+  {
+    if (huskylens.available()) 
+    {
       HUSKYLENSResult result = huskylens.read();
       int x = result.xCenter;
 
       Serial.print("x: ");
       Serial.println(x);
 
-      // 간단한 비례 제어(P제어)
-      int error = x - screenCenterX;
-      panAngle -= error * 0.05;  // 조절 감도 계수
-
+      // 중심에서의 오차만큼 각도 보정
+      int error = x - centerX;
+      panAngle -= error * Kp; //error 에 따른 비례 제어
       panAngle = constrain(panAngle, 0, 180);
       panServo.write(panAngle);
+
+      //각도 변화량
+      angle_offset = panAngle - 90;
+      Serial.print("서보 각도 : "); Serial.print(panAngle);
+      Seiral.print("도, 변화량 : "); Serial.print(angle_offset); Serial.println("도");
+    } 
+    else 
+    {
+      Serial.println("⚠️ 태그 인식되지 않음");
     }
+  } 
+  else 
+  {
+    Serial.println("❌ 요청 실패 — 통신 문제");
   }
 
-  delay(50);  // 제어 간격 (20~50ms 추천)
+  delay(100);  // 속도 조절
 }
