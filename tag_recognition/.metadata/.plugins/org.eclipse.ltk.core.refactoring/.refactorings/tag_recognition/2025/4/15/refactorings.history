@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;tag_recognition/HuskyLens/inc&apos; to &apos;Inc&apos;" description="Rename resource &apos;inc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HuskyLens/inc" name="Inc" stamp="1744456860524" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;tag_recognition/HuskyLens/Inc/HuskyLens_HAL&apos; to &apos;HuskyLens_HAL.h&apos;" description="Rename resource &apos;HuskyLens_HAL&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HuskyLens/Inc/HuskyLens_HAL" name="HuskyLens_HAL.h" stamp="1744457049712" updateReferences="true"/>
-</session>
