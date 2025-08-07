@@ -55,11 +55,22 @@ sequenceDiagram
 
 
 
-## 프로젝트 파일 구조
+## 📁 주요 버전 디렉토리 구조
 
-'''
+```
+Patient-Recognition/
+├── latest version/
+|  ├──HUSKY_LEFT_AWS_V1_0       #ESP32 LEFT 
+|  ├──HUSKY_RIGHT_WIFI_V1_0     #ESP32 RIGHT
+├── test version/
+|  ├──remote_control0           #이전 버전 원격 조정
+|  ├──remote_control1           #최신 버전 원격 조정
+|  ├──remote_master             #STM32 측 구동부
+├── previous version/
+|  ├──HUSKY_SERVO_V2_0          # 이전 버전 (서보모터 사용 허스키 1개)
+|  ├──HUSKY_SErVO_V3_0
+```
 
-'''
 ---
 
 ## 설치 및 실행 방법
