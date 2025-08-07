@@ -1,5 +1,5 @@
 
-# Patent-Recognition
+# Patient-Recognition
 ![banner](https://img.shields.io/badge/Project-Smart%20IV%20Pole-blue.svg)
 ![license](https://img.shields.io/badge/License-MIT-green.svg)
 ![status](https://img.shields.io/badge/Status-In%20Development-yellow.svg)
